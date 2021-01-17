@@ -9,6 +9,7 @@ public class Primitives {
     private float aFloat;
     private double aDouble;
     private char aChar;
+    private boolean aBoolean;
 
     public byte getaByte() {
         return aByte;
@@ -64,5 +65,13 @@ public class Primitives {
 
     public void setaChar(char aChar) {
         this.aChar = aChar;
+    }
+
+    public boolean isaBoolean() {
+        return aBoolean;
+    }
+
+    public void setaBoolean(boolean aBoolean) {
+        this.aBoolean = aBoolean;
     }
 }

@@ -9,6 +9,7 @@ public class Wraps {
     private Float wrapFloat;
     private Double wrapDouble;
     private Character wrapChar;
+    private Boolean wrapBoolean;
 
     public Byte getWrapByte() {
         return wrapByte;
@@ -64,5 +65,13 @@ public class Wraps {
 
     public void setWrapChar(Character wrapChar) {
         this.wrapChar = wrapChar;
+    }
+
+    public Boolean getWrapBoolean() {
+        return wrapBoolean;
+    }
+
+    public void setWrapBoolean(Boolean wrapBoolean) {
+        this.wrapBoolean = wrapBoolean;
     }
 }
