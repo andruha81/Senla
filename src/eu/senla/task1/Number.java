@@ -1,6 +1,6 @@
 package eu.senla.task1;
 
-public class Primitives {
+public class Number {
 
     private byte aByte;
     private short aShort;
