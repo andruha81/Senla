@@ -1,0 +1,137 @@
+
+[	java:S106î"9Replace this use of System.out or System.err by a logger.(œ­¨÷ùÿÿÿÿ8šÆšºñ.
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(³­´ÿ8ˆíæ·ñ.
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(­Ø¦¸8«¶µ·ñ.
+V	java:S106†"9Replace this use of System.out or System.err by a logger.(†Õãö8Æ›ã¸ñ.
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(åÀÀÉÿÿÿÿÿ8øË¿ñ.
+[	java:S106Ê"9Replace this use of System.out or System.err by a logger.(°’Òˆúÿÿÿÿ8Š¼Õ¹ñ.
+V	java:S106¼"9Replace this use of System.out or System.err by a logger.(©Ì…Ê8ùì¾¹ñ.
+[	java:S106à"9Replace this use of System.out or System.err by a logger.(¦‰ù»ÿÿÿÿÿ8›¤‡ºñ.
+e
+java:S1192l"HDefine a constant instead of duplicating this literal "float: " 3 times.(ÙÅá‰8†Ò­¸ñ.
+V	java:S106®"9Replace this use of System.out or System.err by a logger.(èñö8õ¤«¹ñ.
+[	java:S106”"9Replace this use of System.out or System.err by a logger.(Ä‚èˆøÿÿÿÿ8Çğ÷¸ñ.
+W
+java:S4973®"9Use the "equals" method if value comparison was intended.(èñö8õ¤«¹ñ.
+U	java:S106S"9Replace this use of System.out or System.err by a logger.(õíù¤8ëÊï·ñ.
+U	java:S106^"9Replace this use of System.out or System.err by a logger.(†Ûú±8Ìˆ…¸ñ.
+V	java:S106È"9Replace this use of System.out or System.err by a logger.(†Ò¿€8ĞÍÑ¹ñ.
+W
+java:S4973­"9Use the "equals" method if value comparison was intended.(‰„ü»8ú«¹ñ.
+V	java:S106´"9Replace this use of System.out or System.err by a logger.(Îàœñ8ƒÊº¹ñ.
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(²ß›°şÿÿÿÿ8ºü€¸ñ.
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(çÁ şÿÿÿÿ8‚ÉÛ¸ñ.
+V	java:S106¶"9Replace this use of System.out or System.err by a logger.(ÕğÔ‡8½­¼¹ñ.
+U	java:S106b"9Replace this use of System.out or System.err by a logger.(Æ³É8ÿ“¸ñ.
+[	java:S106’"9Replace this use of System.out or System.err by a logger.(Ä‚èˆøÿÿÿÿ8£…ô¸ñ.
+Z	java:S106p"9Replace this use of System.out or System.err by a logger.(ßÊ§ƒûÿÿÿÿ8†Ò­¸ñ.
+V	java:S106»"9Replace this use of System.out or System.err by a logger.(ÆÊ¿¦8ùì¾¹ñ.
+V	java:S106Â"9Replace this use of System.out or System.err by a logger.(¸ò¶ä8ùì¾¹ñ.
+[	java:S106ø"9Replace this use of System.out or System.err by a logger.(ëÛ¬üÿÿÿÿ8¸ó©ºñ.
+[	java:S106ü"9Replace this use of System.out or System.err by a logger.(¬Çæÿÿÿÿÿ8Æ´ºñ.
+W
+java:S4973´"9Use the "equals" method if value comparison was intended.(Îàœñ8Ãú»¹ñ.
+>
+java:S2129£" Remove this "String" constructor(ÏÛÕä8œ¨¹ñ.
+U	java:S106\"9Replace this use of System.out or System.err by a logger.(†Ûú±8Ìˆ…¸ñ.
+[	java:S106æ"9Replace this use of System.out or System.err by a logger.(çÏìÒıÿÿÿÿ8Ñµ’ºñ.
+Z	java:S106z"9Replace this use of System.out or System.err by a logger.(¥û§—ÿÿÿÿÿ8˜íÃ¸ñ.
+V	java:S106Å"9Replace this use of System.out or System.err by a logger.(ù‘®8ÔÌĞ¹ñ.
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(šşÜë8ñï”¸ñ.
+U	java:S106l"9Replace this use of System.out or System.err by a logger.(ÙÅá‰8¢Ï›¸ñ.
+k
+java:S1192z"IDefine a constant instead of duplicating this literal "double: " 3 times.(¥û§—ÿÿÿÿÿ8è¢É¸ñ.
+V	java:S106ô"9Replace this use of System.out or System.err by a logger.(ª ª¬8§§£ºñ.
+[	java:S106½"9Replace this use of System.out or System.err by a logger.(ù´•¾ùÿÿÿÿ8ùì¾¹ñ.
+V	java:S106"9Replace this use of System.out or System.err by a logger.(÷‰ÔÃ8…Êç¸ñ.
+[	java:S106ì"9Replace this use of System.out or System.err by a logger.(§÷˜ãşÿÿÿÿ8šÆšºñ.
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(­‹“œøÿÿÿÿ8øË¿ñ.
+U	java:S106n"9Replace this use of System.out or System.err by a logger.(ÙÅá‰8†Ò­¸ñ.
+[	java:S106ş"9Replace this use of System.out or System.err by a logger.(úèûÙúÿÿÿÿ8ô£¼ºñ.
+V	java:S106–"9Replace this use of System.out or System.err by a logger.(¥–’¨8ûüı¸ñ.
+[	java:S106ª"9Replace this use of System.out or System.err by a logger.(Î‰ÅÜúÿÿÿÿ8õı­¹ñ.
+V	java:S106­"9Replace this use of System.out or System.err by a logger.(‰„ü»8‘§ª¹ñ.
+W
+java:S4973²"9Use the "equals" method if value comparison was intended.(©¿­8Òí·¹ñ.
+W
+java:S4973µ"9Use the "equals" method if value comparison was intended.(­ˆ¢é8”Œ¼¹ñ.
+V	java:S106Œ"9Replace this use of System.out or System.err by a logger.(÷‰ÔÃ8…Êç¸ñ.
+V	java:S106Š"9Replace this use of System.out or System.err by a logger.(÷‰ÔÃ8…Êç¸ñ.
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(•ñƒÑÿÿÿÿÿ8ñï”¸ñ.
+[	java:S106€"9Replace this use of System.out or System.err by a logger.(çÁ şÿÿÿÿ8ŸìÍ¸ñ.
+V	java:S106§"9Replace this use of System.out or System.err by a logger.(ù‘®8õı­¹ñ.
+V	java:S106²"9Replace this use of System.out or System.err by a logger.(©¿­8Òí·¹ñ.
+U	java:S106v"9Replace this use of System.out or System.err by a logger.(úÚ”8…¥µ¸ñ.
+U	java:S106r"9Replace this use of System.out or System.err by a logger.(¿Ÿ¨‚8†Ò­¸ñ.
+\
+java:S4973±"9Use the "equals" method if value comparison was intended.(Šè‘¨ıÿÿÿÿ8û‡·¹ñ.
+Z	java:S106t"9Replace this use of System.out or System.err by a logger.(ù°ÿ¥ÿÿÿÿÿ8Ë‹µ¸ñ.
+d
+java:S2153Û"FRemove the boxing to "Byte"; The argument is already of the same type.(Áµ®î8„Ÿû¹ñ.
+V	java:S106¾"9Replace this use of System.out or System.err by a logger.(¢¼Ğï8ùì¾¹ñ.
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(ÇàÊö8ÎØ¿·ñ.
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.( şÛíùÿÿÿÿ8óó“ñ.
+T	java:S1062"9Replace this use of System.out or System.err by a logger.(ŒÌ³I8øË¿ñ.
+U	java:S106."9Replace this use of System.out or System.err by a logger.(Ü›¨Ê8øË¿ñ.
+V	java:S106µ"9Replace this use of System.out or System.err by a logger.(­ˆ¢é8”Œ¼¹ñ.
+[	java:S106±"9Replace this use of System.out or System.err by a logger.(Šè‘¨ıÿÿÿÿ8í ¶¹ñ.
+[	java:S106Ö"9Replace this use of System.out or System.err by a logger.(Ş†¨æÿÿÿÿÿ8Í˜ë¹ñ.
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(ÜåŸƒûÿÿÿÿ8Ø‹Ö·ñ.
+U	java:S106À"9Replace this use of System.out or System.err by a logger.(Ú¿”Z8ùì¾¹ñ.
+e
+java:S1192Š"GDefine a constant instead of duplicating this literal "char: " 4 times.(÷‰ÔÃ8…Êç¸ñ.
+T	java:S106U"9Replace this use of System.out or System.err by a logger.(¿ùí8º´ş·ñ.
+[	java:S106¿"9Replace this use of System.out or System.err by a logger.(‚ÇØÿÿÿÿÿ8ùì¾¹ñ.
+V	java:S106³"9Replace this use of System.out or System.err by a logger.(¥äì‰8®¨¸¹ñ.
+[	java:S106Ø"9Replace this use of System.out or System.err by a logger.(Ş†¨æÿÿÿÿÿ8¾°ó¹ñ.
+[	java:S106Ü"9Replace this use of System.out or System.err by a logger.(Ş†¨æÿÿÿÿÿ8ı§ú¹ñ.
+V
+java:S4973¯"9Use the "equals" method if value comparison was intended.(„ƒÆN8æ«¹ñ.
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(ÈüŠèúÿÿÿÿ8Ë±¾ñ.
+[	java:S106Æ"9Replace this use of System.out or System.err by a logger.(å‹©‰øÿÿÿÿ8íôÍ¹ñ.
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(Ï™Í™8…Ä°·ñ.
+V	java:S106ò"9Replace this use of System.out or System.err by a logger.(ª ª¬8½æ¡ºñ.
+Z	java:S106|"9Replace this use of System.out or System.err by a logger.(¥û§—ÿÿÿÿÿ8˜íÃ¸ñ.
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(³­´ÿ8ˆíæ·ñ.
+c
+java:S1192M"FDefine a constant instead of duplicating this literal "int: " 4 times.(³­´ÿ8Õüê·ñ.
+p
+java:S1192Ö"MDefine a constant instead of duplicating this literal "local Byte: " 4 times.(Ş†¨æÿÿÿÿÿ8Ù¤Œºñ.
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(†Ò¿€8õı­¹ñ.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(ÒñÑ¦øÿÿÿÿ8øË¿ñ.
+[	java:S106ö"9Replace this use of System.out or System.err by a logger.(ëÛ¬üÿÿÿÿ8Ìö§ºñ.
+[	java:S106¦"9Replace this use of System.out or System.err by a logger.(êèùıÿÿÿÿ8Áƒ­¹ñ.
+U	java:S106¯"9Replace this use of System.out or System.err by a logger.(„ƒÆN8æ«¹ñ.
+W
+java:S4973¶"9Use the "equals" method if value comparison was intended.(ÕğÔ‡8½­¼¹ñ.
+Z	java:S106d"9Replace this use of System.out or System.err by a logger.(±ø’¡üÿÿÿÿ8Îğ“¸ñ.
+V	java:S106â"9Replace this use of System.out or System.err by a logger.(İÈúë8œ„‹ºñ.
+[	java:S106°"9Replace this use of System.out or System.err by a logger.(à–Ã¾ûÿÿÿÿ8æª¬¹ñ.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(´®²ùşÿÿÿÿ8›„¿ñ.
+[	java:S106Ô"9Replace this use of System.out or System.err by a logger.(‡˜®İøÿÿÿÿ8Ïéà¹ñ.
+Z	java:S106~"9Replace this use of System.out or System.err by a logger.(åûÉŞúÿÿÿÿ8è¢É¸ñ.
+V	java:S106„"9Replace this use of System.out or System.err by a logger.(éãú°8‹Ëà¸ñ.
+[	java:S106Á"9Replace this use of System.out or System.err by a logger.(ÑÛßÀÿÿÿÿÿ8ùì¾¹ñ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(šğï%8ò§š¹ñ.
+U	java:S106œ"9Replace this use of System.out or System.err by a logger.(¢ì©h8è¼‰¹ñ.
+d
+java:S1192\"GDefine a constant instead of duplicating this literal "long: " 3 times.(†Ûú±8ÀÒ‰¸ñ.
+j
+java:S1192¡"GDefine a constant instead of duplicating this literal "string" 3 times.(ÚñŠãùÿÿÿÿ8œ¨¹ñ.
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(ŸÑõÌ8øË¿ñ.
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(¥–’¨8Õüê·ñ.
+[	java:S106º"9Replace this use of System.out or System.err by a logger.(ıèÿ¾üÿÿÿÿ8ùì¾¹ñ.
+[	java:S106Ú"9Replace this use of System.out or System.err by a logger.(Ş†¨æÿÿÿÿÿ8ı§ø¹ñ.
+[	java:S106š"9Replace this use of System.out or System.err by a logger.(ÔƒñŒûÿÿÿÿ8Âùƒ¹ñ.
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(ì›‰ùÿÿÿÿ8ÀÒ‰¸ñ.
+[	java:S106¹"9Replace this use of System.out or System.err by a logger.(å‹©‰øÿÿÿÿ8ùì¾¹ñ.
+W
+java:S4973³"9Use the "equals" method if value comparison was intended.(¥äì‰8®¨¸¹ñ.
+[	java:S106è"9Replace this use of System.out or System.err by a logger.(ÆÔªòøÿÿÿÿ8œ”—ºñ.
+[	java:S106©"9Replace this use of System.out or System.err by a logger.(°’Òˆúÿÿÿÿ8õı­¹ñ.
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(Ì¦¼ñşÿÿÿÿ8¿úñ.
+\
+java:S4973°"9Use the "equals" method if value comparison was intended.(à–Ã¾ûÿÿÿÿ8æª¬¹ñ.
+[	java:S106"9Replace this use of System.out or System.err by a logger.(Üıâ°ùÿÿÿÿ8²Èğ¸ñ.
+[	java:S106Ì"9Replace this use of System.out or System.err by a logger.(Î‰ÅÜúÿÿÿÿ8´×¹ñ.
+Z	java:S106F"9Replace this use of System.out or System.err by a logger.(ƒÀÂÿıÿÿÿÿ8“ÕÅ·ñ.
