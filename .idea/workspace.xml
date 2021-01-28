@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe018d-ad94-4132-9a2d-84b7d431b4c3" name="Default Changelist" comment="task 2">
-      <change afterPath="$PROJECT_DIR$/src/eu/senla/task3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eu/senla/task3/entity/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9dbe018d-ad94-4132-9a2d-84b7d431b4c3" name="Default Changelist" comment="task 3">
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <recent name="C:\Users\Khaustau\IdeaProjects\Senla\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task3">
+  <component name="RunManager" selected="Application.Task4">
     <configuration name="Task1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="eu.senla.task1.Main" />
       <module name="Senla" />
@@ -88,10 +88,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task4" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="eu.senla.task4.Main" />
+      <module name="Senla" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Task1" />
       <item itemvalue="Application.Task2" />
       <item itemvalue="Application.Task3" />
+      <item itemvalue="Application.Task4" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -124,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611177161226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task 3">
+      <created>1611522868091</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611522868091</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,13 +157,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="task 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 2" />
+    <MESSAGE value="task 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611520741628">
+    <state x="223" y="14" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611861605816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611520741628" />
+    <state x="223" y="14" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611861605816" />
     <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610911451870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -157,10 +173,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1611522644590" />
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611520739466">
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611861601926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1611520739466" />
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1611861601926" />
     <state x="501" y="153" key="FileChooserDialogImpl" timestamp="1611173964116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -173,22 +189,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610911545471" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1611522348578">
+    <state width="1493" height="375" key="GridCell.Tab.0.bottom" timestamp="1611869400536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611522348578" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1611522348578">
+    <state width="1493" height="375" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611869400536" />
+    <state width="1493" height="375" key="GridCell.Tab.0.center" timestamp="1611869400536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611522348578" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1611522348578">
+    <state width="1493" height="375" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611869400536" />
+    <state width="1493" height="375" key="GridCell.Tab.0.left" timestamp="1611869400536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611522348578" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1611522348578">
+    <state width="1493" height="375" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611869400536" />
+    <state width="1493" height="375" key="GridCell.Tab.0.right" timestamp="1611869400536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611522348578" />
+    <state width="1493" height="375" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611869400536" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610917732207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -209,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611174444137" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611177173780">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611522921737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611177173780" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611522921737" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1611171766509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
