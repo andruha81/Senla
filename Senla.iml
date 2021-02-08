@@ -7,5 +7,20 @@
     </content>
     <orderEntry type="jdk" jdkName="14" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../commons-lang3-3.11" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../commons-lang3-3.11/apidocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../commons-lang3-3.11" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../commons-lang3-3.11" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../commons-lang3-3.11" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>

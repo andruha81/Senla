@@ -18,3 +18,9 @@ S
 	Senla.iml,b\4\b456bdb4fe1c432dd3a3196dc1feefb1019f0632
 L
 src/eu/senla/task3/Main.java,b\8\b8c6e3bcda8978df89f32f377db2c19aad787348
+L
+src/eu/senla/task4/Main.java,b\c\bc9bcdab04445fa91e0cb2d5fe3440ea5ed2e524
+L
+src/eu/senla/task5/Main.java,c\2\c22e3c6158f29097387ad60fdc8c72959ef78ec4
+Y
+)src/eu/senla/task5/entity/Сontainer.java,0\a\0a9255c5441e988b1d3f20ce6e7dc951e24fd7ed
