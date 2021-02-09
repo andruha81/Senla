@@ -18,6 +18,22 @@ public class Ship {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder shipInfo = new StringBuilder();
+
+        shipInfo.append(String.format("Ship %s with %s deck(s) amd mass %,d %n", this.name, decks.length, shipMass));
+        for (int i = 0; i < decks.length; i++) {
+            shipInfo.append(String.format("Deck: %s%n%s", i + 1, decks[i]));
+        }
+
+        return shipInfo.toString();
+    }
+
+    public String getShortName() {
+        return String.format("%s with %s deck(s)", this.name, decks.length);
+    }
+
     public void putContainersOnDeck() {
         for (Deck deck : decks) {
             deck.addContainers();
@@ -32,15 +48,7 @@ public class Ship {
         }
     }
 
-    @Override
-    public String toString() {
-        StringBuilder shipInfo = new StringBuilder();
-
-        shipInfo.append(String.format("Ship %s with %s deck(s) amd mass %s%n", name, decks.length, shipMass));
-        for (int i = 0; i < decks.length; i++) {
-            shipInfo.append(String.format("Deck: %s%n%s", i + 1, decks[i]));
-        }
-
-        return shipInfo.toString();
+    public int getShipMass() {
+        return shipMass;
     }
 }

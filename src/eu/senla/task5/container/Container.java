@@ -1,18 +1,18 @@
-package eu.senla.task5.entity;
+package eu.senla.task5.container;
 
 import org.apache.commons.lang3.RandomUtils;
 
 public abstract class Container {
 
-    protected static final double MIN_DIAGONAL = 10;
+    protected static final int MIN_DIAGONAL = 10;
     protected static final int MIN_HEIGHT = 10;
     protected static final int MAX_HEIGHT = 100;
     protected static final int FIRST_DENSITY = 1000;
     protected static final int SECOND_DENSITY = 2000;
 
-    protected double diagonal;
-    protected double height;
-    protected double volume;
+    protected int diagonal;
+    protected int height;
+    protected int volume;
     protected int mass;
     protected int density;
     protected int containerForm;
@@ -35,14 +35,14 @@ public abstract class Container {
 
     @Override
     public String toString() {
-        return String.format("Container with height: %s, volume: %s, water density: %s, mass: %s%n", height, volume, density, mass);
+        return String.format("Container with height: %,dm, volume: %,dm3, water density: %,dkg/m3, mass: %,dkg %n", height, volume, density, mass);
     }
 
     abstract void countVolume();
 
     protected void countMass() {
         countVolume();
-        this.mass = (int) this.volume * density;
+        this.mass = volume * density;
     }
 
     public int getContainerForm() {

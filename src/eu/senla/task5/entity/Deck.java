@@ -1,5 +1,9 @@
 package eu.senla.task5.entity;
 
+import eu.senla.task5.container.ConeContainer;
+import eu.senla.task5.container.Container;
+import eu.senla.task5.container.CylinderContainer;
+import eu.senla.task5.container.SquareContainer;
 import org.apache.commons.lang3.RandomUtils;
 
 import java.util.Arrays;
