@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dbe018d-ad94-4132-9a2d-84b7d431b4c3" name="Default Changelist" comment="task 5">
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/api/IRoboDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/dao/RobotDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/entity/BodyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/entity/HeadType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/entity/Robo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/eu/senla/task7/utils/RoboFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/ConeContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/container/ConeContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/container/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/CylinderContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/container/CylinderContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/entity/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/Port.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/entity/Port.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/entity/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eu/senla/task5/entity/SquareContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task5/container/SquareContainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,7 +77,7 @@
       <recent name="C:\Users\Khaustau\IdeaProjects\Senla\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task5">
+  <component name="RunManager" selected="Application.Task7">
     <configuration name="Task1" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="eu.senla.task1.Main" />
       <module name="Senla" />
@@ -112,12 +113,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task7" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="eu.senla.task7.Main" />
+      <module name="Senla" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Task1" />
       <item itemvalue="Application.Task2" />
       <item itemvalue="Application.Task3" />
       <item itemvalue="Application.Task4" />
       <item itemvalue="Application.Task5" />
+      <item itemvalue="Application.Task7" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -171,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612822088173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task 5">
+      <created>1612905110549</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612905110549</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,34 +211,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="task 5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612821257429">
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613899965936">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1612821257429" />
+    <state x="223" y="0" width="1089" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1613899965936" />
     <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610911451870">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610911451870" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1612903861532">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1613899413722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1612903861532" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1613899413722" />
     <state x="499" y="191" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612899741309">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="191" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1612899741309" />
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1612821255982">
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1613899964239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1612821255982" />
+    <state x="498" y="214" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1613899964239" />
     <state x="551" y="306" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612899743356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="551" y="306" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1612899743356" />
-    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612814542197">
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613898529717">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1612814542197" />
+    <state x="450" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1613898529717" />
     <state x="592" y="287" key="DetectedRootsChooserDialog" timestamp="1612811983093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -239,46 +255,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="580" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610911545471" />
-    <state width="1493" height="375" key="GridCell.Tab.0.bottom" timestamp="1612904994548">
+    <state width="1493" height="370" key="GridCell.Tab.0.bottom" timestamp="1613900009254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="375" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612904994548" />
-    <state width="1493" height="375" key="GridCell.Tab.0.center" timestamp="1612904994548">
+    <state width="1493" height="370" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1613900009254" />
+    <state width="1493" height="370" key="GridCell.Tab.0.center" timestamp="1613900009254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="375" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612904994548" />
-    <state width="1493" height="375" key="GridCell.Tab.0.left" timestamp="1612904994548">
+    <state width="1493" height="370" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1613900009254" />
+    <state width="1493" height="370" key="GridCell.Tab.0.left" timestamp="1613900009254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="375" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612904994548" />
-    <state width="1493" height="375" key="GridCell.Tab.0.right" timestamp="1612904994548">
+    <state width="1493" height="370" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1613900009254" />
+    <state width="1493" height="370" key="GridCell.Tab.0.right" timestamp="1613900009254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="375" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612904994548" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612901752595">
+    <state width="1493" height="370" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1613900009254" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1612905141716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612901752595" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612901752595">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612905141716" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1612905141716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612901752595" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612901752595">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1612905141716" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1612905141715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612901752595" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612901752595">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1612905141715" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1612905141716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612901752595" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612905141716" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1612811988255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612811988255" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612822099550">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1612905120492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612822099550" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1612905120492" />
     <state x="410" y="139" width="700" height="530" key="recent.locations.popup" timestamp="1611171766509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
