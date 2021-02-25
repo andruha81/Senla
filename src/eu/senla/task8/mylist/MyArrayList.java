@@ -1,7 +1,6 @@
 package eu.senla.task8.mylist;
 
 import java.util.Comparator;
-import java.util.List;
 import java.util.ListIterator;
 
 public class MyArrayList<E> implements MyList<E> {
@@ -29,6 +28,7 @@ public class MyArrayList<E> implements MyList<E> {
         }
     }
 
+    @SuppressWarnings("ManualArrayCopy")
     private boolean changeCapacity(int growth, int minGrowth) {
         Object[] oldArray = myArray;
         int newCapacity;
@@ -48,13 +48,24 @@ public class MyArrayList<E> implements MyList<E> {
         return true;
     }
 
+    private boolean checkIndex(int index) {
+        if ((index < 0) || (index >= myArray.length)) {
+            System.out.printf("Index %s out of range from 0 to %s", index, myArray.length - 1);
+            return true;
+        }
+        return false;
+    }
+
+    @SuppressWarnings("ManualArrayCopy")
     @Override
     public void add(int index, E obj) {
-        if (size == myArray.length) {
-            if (!changeCapacity(size >> 1, 1)) {
-                System.out.println("Can't add element. MyArrayList capacity is full");
-                return;
-            }
+        if (checkIndex(index)) {
+            return;
+        }
+
+        if ((size == myArray.length) && (!changeCapacity(size >> 1, 1))) {
+            System.out.println("Can't add element. MyArrayList capacity is full");
+            return;
         }
 
         for (int i = size - 1; i >= index; i--) {
@@ -64,8 +75,13 @@ public class MyArrayList<E> implements MyList<E> {
         size++;
     }
 
+    @SuppressWarnings("ManualArrayCopy")
     @Override
     public boolean addAll(int index, MyList<? extends E> col) {
+        if (checkIndex(index)) {
+            return false;
+        }
+
         Object[] addArray = col.toArray();
 
         if (size + addArray.length > myArray.length) {
@@ -82,23 +98,54 @@ public class MyArrayList<E> implements MyList<E> {
         for (int i = 0; i < addArray.length; i++) {
             myArray[index + i] = addArray[i];
         }
+        size += addArray.length;
 
         return true;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public E get(int index) {
-        return null;
+        if (checkIndex(index)) {
+            return null;
+        }
+        return (E) myArray[index];
     }
 
     @Override
     public int indexOf(Object obj) {
-        return 0;
+        if (obj == null) {
+            for (int i = 0; i < size; i++) {
+                if (myArray[i] == null) {
+                    return i;
+                }
+            }
+        } else {
+            for (int i = 0; i < myArray.length; i++) {
+                if (myArray[i].equals(obj)) {
+                    return i;
+                }
+            }
+        }
+        return -1;
     }
 
     @Override
     public int lastIndexOf(Object obj) {
-        return 0;
+        if (obj == null) {
+            for (int i = size - 1; i >= 0; i--) {
+                if (myArray[i] == null) {
+                    return i;
+                }
+            }
+        } else {
+            for (int i = size - 1; i >= 0; i--) {
+                if (myArray[i].equals(obj)) {
+                    return i;
+                }
+            }
+        }
+        return -1;
     }
 
     @Override
@@ -106,14 +153,31 @@ public class MyArrayList<E> implements MyList<E> {
         return null;
     }
 
+    @SuppressWarnings({"unchecked", "ManualArrayCopy"})
     @Override
     public E remove(int index) {
-        return null;
+        if (checkIndex(index)) {
+            return null;
+        }
+        E el = (E) myArray[index];
+
+        for (int i = index + 1; i < size; i++) {
+            myArray[i - 1] = myArray[i];
+        }
+        myArray[size - 1] = null;
+        size--;
+        return el;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public E set(int index, E obj) {
-        return null;
+        if (checkIndex(index)) {
+            return null;
+        }
+        E el = (E) myArray[index];
+        myArray[index] = obj;
+        return el;
     }
 
     @Override
@@ -121,11 +185,20 @@ public class MyArrayList<E> implements MyList<E> {
 
     }
 
+    @SuppressWarnings("unchecked")
     @Override
-    public List<E> subList(int start, int end) {
-        return null;
+    public MyList<E> subList(int start, int end) {
+        if (checkIndex(start) || checkIndex(end + 1)) {
+            return null;
+        }
+        MyList<E> returnList = new MyArrayList<>(end - start + 1);
+        for (int i = 0; i < end; i++) {
+            returnList.add(i, (E) myArray[i]);
+        }
+        return returnList;
     }
 
+    @SuppressWarnings("ManualArrayCopy")
     @Override
     public Object[] toArray() {
         Object[] returnArray = new Object[myArray.length];

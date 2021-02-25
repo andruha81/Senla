@@ -1,7 +1,6 @@
 package eu.senla.task8.mylist;
 
 import java.util.Comparator;
-import java.util.List;
 import java.util.ListIterator;
 
 public interface MyList<E> {
@@ -15,9 +14,9 @@ public interface MyList<E> {
 
     int lastIndexOf(Object obj);
 
-    ListIterator<E> listIterator ();
+    ListIterator<E> listIterator();
 
-    static <E> List<E> of(){
+    static <E> MyList<E> of() {
         return null;
     }
 
@@ -27,7 +26,7 @@ public interface MyList<E> {
 
     void sort(Comparator<? super E> comp);
 
-    List<E> subList(int start, int end);
+    MyList<E> subList(int start, int end);
 
     Object[] toArray();
 }

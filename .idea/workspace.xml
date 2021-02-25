@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbe018d-ad94-4132-9a2d-84b7d431b4c3" name="Default Changelist" comment="task 5">
-      <change afterPath="$PROJECT_DIR$/src/eu/senla/task8/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyList.java" afterDir="false" />
+    <list default="true" id="9dbe018d-ad94-4132-9a2d-84b7d431b4c3" name="Default Changelist" comment="task 8">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eu/senla/task8/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task8/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eu/senla/task8/mylist/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,6 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1612905141716" />
+    <state x="563" y="114" key="RollbackChangesDialog" timestamp="1614282366337">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="114" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1614282366337" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1612811988255">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

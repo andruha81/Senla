@@ -50,3 +50,9 @@ S
 #src/eu/senla/task7/entity/Robo.java,e\5\e5d960e5fddd06d724d4121f2d59a30426c2b40f
 T
 $src/eu/senla/task7/dao/RobotDao.java,9\0\905dc7e360a4cf0d8bed3a26ce924d364007e6c4
+Q
+!src/eu/senla/task8/main/Main.java,0\0\0049bc73316e6f0a8187021c2932668853eb2ddb
+U
+%src/eu/senla/task8/mylist/MyList.java,8\e\8ec0cd8b910cef991826c476da3eac3444909985
+Z
+*src/eu/senla/task8/mylist/MyArrayList.java,6\3\632805bb3c1efce38dd2b1b7990145a41c6a2627
