@@ -1,7 +1,9 @@
 package eu.senla.task8.mylist;
 
 import java.util.Comparator;
+import java.util.ConcurrentModificationException;
 import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 public class MyArrayList<E> implements MyList<E> {
 
@@ -16,7 +18,7 @@ public class MyArrayList<E> implements MyList<E> {
 
     public MyArrayList(MyList<? extends E> col) {
         myArray = col.toArray();
-        this.size = myArray.length;
+        this.size = col.size();
     }
 
     public MyArrayList(int capacity) {
@@ -28,7 +30,6 @@ public class MyArrayList<E> implements MyList<E> {
         }
     }
 
-    @SuppressWarnings("ManualArrayCopy")
     private boolean changeCapacity(int growth, int minGrowth) {
         Object[] oldArray = myArray;
         int newCapacity;
@@ -48,18 +49,17 @@ public class MyArrayList<E> implements MyList<E> {
         return true;
     }
 
-    private boolean checkIndex(int index) {
-        if ((index < 0) || (index >= myArray.length)) {
-            System.out.printf("Index %s out of range from 0 to %s", index, myArray.length - 1);
+    private boolean checkIndex(int index, int end) {
+        if ((index < 0) || (index > end)) {
+            System.out.printf("Index %s out of range from 0 to %s", index, size);
             return true;
         }
         return false;
     }
 
-    @SuppressWarnings("ManualArrayCopy")
     @Override
     public void add(int index, E obj) {
-        if (checkIndex(index)) {
+        if (checkIndex(index, size)) {
             return;
         }
 
@@ -68,45 +68,47 @@ public class MyArrayList<E> implements MyList<E> {
             return;
         }
 
-        for (int i = size - 1; i >= index; i--) {
-            myArray[i + 1] = myArray[i];
+        if (index < size) {
+            for (int i = size - 1; i >= index; i--) {
+                myArray[i + 1] = myArray[i];
+            }
         }
         myArray[index] = obj;
         size++;
     }
 
-    @SuppressWarnings("ManualArrayCopy")
     @Override
     public boolean addAll(int index, MyList<? extends E> col) {
-        if (checkIndex(index)) {
+        if (checkIndex(index, size)) {
             return false;
         }
 
         Object[] addArray = col.toArray();
 
-        if (size + addArray.length > myArray.length) {
-            int growth = size + addArray.length - myArray.length;
+        if (size + col.size() > myArray.length) {
+            int growth = size + col.size() - myArray.length;
             if (!changeCapacity(growth, growth)) {
                 return false;
             }
         }
 
-        for (int i = size - 1; i >= index; i--) {
-            myArray[i + addArray.length] = myArray[i];
+        if (index < size) {
+            for (int i = size - 1; i >= index; i--) {
+                myArray[i + col.size()] = myArray[i];
+            }
         }
 
-        for (int i = 0; i < addArray.length; i++) {
+        for (int i = 0; i < col.size(); i++) {
             myArray[index + i] = addArray[i];
         }
-        size += addArray.length;
+        size += col.size();
 
         return true;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public E get(int index) {
-        if (checkIndex(index)) {
+        if (checkIndex(index, size - 1)) {
             return null;
         }
         return (E) myArray[index];
@@ -150,13 +152,20 @@ public class MyArrayList<E> implements MyList<E> {
 
     @Override
     public ListIterator<E> listIterator() {
-        return null;
+        return new MyArrayList<E>.ListItr(0);
     }
 
-    @SuppressWarnings({"unchecked", "ManualArrayCopy"})
+    static <E> MyList<E> of(E... elements) {
+        MyList<E> returnList = new MyArrayList<>();
+        for (int i = 0; i < elements.length; i++) {
+            returnList.add(i, elements[i]);
+        }
+        return returnList;
+    }
+
     @Override
     public E remove(int index) {
-        if (checkIndex(index)) {
+        if (checkIndex(index, size - 1)) {
             return null;
         }
         E el = (E) myArray[index];
@@ -169,10 +178,9 @@ public class MyArrayList<E> implements MyList<E> {
         return el;
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public E set(int index, E obj) {
-        if (checkIndex(index)) {
+        if (checkIndex(index, size - 1)) {
             return null;
         }
         E el = (E) myArray[index];
@@ -182,23 +190,29 @@ public class MyArrayList<E> implements MyList<E> {
 
     @Override
     public void sort(Comparator<? super E> comp) {
-
+        for (int i = myArray.length - 1; i >= 1; i--) {
+            for (int j = 0; j < i; j++) {
+                if ((myArray[j] != null) && (myArray[j + 1] != null) && (comp.compare((E) myArray[j], (E) myArray[j + 1]) > 0)) {
+                    Object el = myArray[j + 1];
+                    myArray[j + 1] = myArray[j];
+                    myArray[j] = el;
+                }
+            }
+        }
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public MyList<E> subList(int start, int end) {
-        if (checkIndex(start) || checkIndex(end + 1)) {
+        if (checkIndex(start, size - 1) || checkIndex(end, size)) {
             return null;
         }
-        MyList<E> returnList = new MyArrayList<>(end - start + 1);
-        for (int i = 0; i < end; i++) {
-            returnList.add(i, (E) myArray[i]);
+        MyList<E> returnList = new MyArrayList<>(end - start);
+        for (int i = 0; i < end - start; i++) {
+            returnList.add(i, (E) myArray[i + start]);
         }
         return returnList;
     }
 
-    @SuppressWarnings("ManualArrayCopy")
     @Override
     public Object[] toArray() {
         Object[] returnArray = new Object[myArray.length];
@@ -208,5 +222,105 @@ public class MyArrayList<E> implements MyList<E> {
         }
 
         return returnArray;
+    }
+
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder returnString = new StringBuilder();
+        for (Object el : myArray) {
+            returnString.append(el + ",");
+        }
+        return returnString.toString();
+    }
+
+    private class ListItr implements ListIterator<E> {
+        int cursor;
+        int lastRet = -1;
+
+        ListItr(int index) {
+            cursor = index;
+        }
+
+        public boolean hasNext() {
+            return cursor != size;
+        }
+
+        @SuppressWarnings("unchecked")
+        public E next() {
+            int i = cursor;
+            if (i >= size) {
+                throw new NoSuchElementException();
+            }
+            Object[] myItArray = MyArrayList.this.myArray;
+            if (i >= myItArray.length) {
+                throw new ConcurrentModificationException();
+            }
+            cursor = i + 1;
+            return (E) myItArray[lastRet = i];
+        }
+
+        public void remove() {
+            if (lastRet < 0)
+                throw new IllegalStateException();
+
+            try {
+                MyArrayList.this.remove(lastRet);
+                cursor = lastRet;
+                lastRet = -1;
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
+        }
+
+        public boolean hasPrevious() {
+            return cursor != 0;
+        }
+
+        public int nextIndex() {
+            return cursor;
+        }
+
+        public int previousIndex() {
+            return cursor - 1;
+        }
+
+        @SuppressWarnings("unchecked")
+        public E previous() {
+            int i = cursor - 1;
+            if (i < 0)
+                throw new NoSuchElementException();
+            Object[] myItArray = MyArrayList.this.myArray;
+            if (i >= myItArray.length)
+                throw new ConcurrentModificationException();
+            cursor = i;
+            return (E) myItArray[lastRet = i];
+        }
+
+        public void set(E e) {
+            if (lastRet < 0)
+                throw new IllegalStateException();
+
+            try {
+                MyArrayList.this.set(lastRet, e);
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
+        }
+
+        public void add(E e) {
+            try {
+                int i = cursor;
+                MyArrayList.this.add(i, e);
+                cursor = i + 1;
+                lastRet = -1;
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
+        }
     }
 }

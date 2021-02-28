@@ -16,10 +16,6 @@ public interface MyList<E> {
 
     ListIterator<E> listIterator();
 
-    static <E> MyList<E> of() {
-        return null;
-    }
-
     E remove(int index);
 
     E set(int index, E obj);
@@ -29,4 +25,6 @@ public interface MyList<E> {
     MyList<E> subList(int start, int end);
 
     Object[] toArray();
+
+    int size();
 }
