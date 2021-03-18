@@ -10,7 +10,12 @@ public class Main{
         CatDao catDao = new CatDao();
 
         catDao.addCat("Murka", 10);
+        catDao.addCat(null, 2);
+        catDao.addCat("Barsik", -5);
+        catDao.addCat("  ", 15);
+        catDao.addCat("Konfetka", 8);
 
-        System.out.println(catDao.getCat(0));
+        System.out.printf("Cat from index 2: %s%n", catDao.getCat(2));
+        System.out.printf("Cat from index 5: %s%n", catDao.getCat(5));
     }
 }

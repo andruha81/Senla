@@ -1,8 +1,8 @@
 package eu.senla.task10.api.exceptions;
 
-public class NullNameException extends Exception{
+public class BlankNameException extends Exception{
     @Override
     public String getMessage() {
-        return "Name is null";
+        return "Name is blank";
     }
 }

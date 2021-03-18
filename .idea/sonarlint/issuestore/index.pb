@@ -88,3 +88,9 @@ S
 #src/eu/senla/task10/dao/CatDao.java,2\6\2630f343f71736636bbdea513693f4a844d1d5c1
 n
 >src/eu/senla/task10/api/exceptions/AgeOutOfBoundException.java,3\7\37b71995ea2f75d207da9a41c509f259e1acec67
+R
+"src/eu/senla/task10/main/Main.java,9\7\9742034bfb36e4bda0800645d84e6a3c4666f782
+l
+<src/eu/senla/task10/api/exceptions/NoSuchIndexException.java,f\0\f07c322f2958bf1d7d18ff47ba8312591d112c69
+i
+9src/eu/senla/task10/api/exceptions/NullNameException.java,9\d\9d53bfc7669a11ea5cfffdf789687b47fdea48ff
